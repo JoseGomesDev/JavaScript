@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+      var num1 = prompt('Informe o primeiro número: ')
+      var operacao = prompt('Informe a operação: ( soma/subtração )')
+      var num2 = prompt('Informe o segundo número: ')
+
+      
+      function calcular(num1, num2, operacao){
+
+        num1 = parseFloat(num1)
+        num2 = parseFloat(num2)
+
+        var resultado = 0;
+
+        if (operacao == 'soma'){
+          resultado = num1 + num2;
+        }
+
+        if (operacao == 'subtração'){
+          resultado = num1 - num2;
+        }
+
+        return resultado;
+
+      }
+
+      document.write('O resultado é: ' + calcular(num1, num2, operacao));
+      
+    </script>
+    
+  </head>
+
+  <body>
+  </body>
+</html>
